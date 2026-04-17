@@ -1,0 +1,18 @@
+// 🔹 EmailJS send
+  emailjs.send("service_oqxr117", "template_qvfqjc6", {
+      firstName,
+      lastName,
+      email,
+      phone,
+      subject,
+      message
+  }).then(function(response) {
+      // console.log("EmailJS success:", response.status, response.text);
+  }, function(error) {
+      // console.error("EmailJS Error:", error);
+  });
+Swal.fire({
+  title: "Good job!",
+  text: "Your Form Is Submited successfully!",
+  icon: "success"
+});
